@@ -1,0 +1,51 @@
+@import "../variables.modules";
+
+nav {
+  transition: all 400ms;
+  z-index: 1;
+  border: none;
+  outline: none;
+  color: $dark;
+  transition: 300ms ease-in-out;
+  
+  color: black;
+  box-shadow: 13px 13px 100px #969696,
+             -13px -13px 100px #ffffff;
+  transition: 300ms ease-in-out;
+  
+    li {
+      font-weight: 800;
+      text-transform: capitalize;
+      &:hover {
+        transform: translateY(-3px);
+        transition: $transition;
+        
+      }
+    }
+  
+
+}
+
+.dark {
+  background-color: $dark;
+  
+}
+
+
+.light {
+  background-color: $white;
+}
+
+.active {
+  transition: $transition;
+  border: none;
+  outline: none;
+  border-radius: 15px; 
+  padding:0px 7px 0px 7px;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+}
+
+.link:hover {
+  color: unset;
+}
