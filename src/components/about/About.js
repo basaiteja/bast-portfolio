@@ -22,7 +22,7 @@ export default function About({innerRef}) {
 
    
 
-    function miscText() {
+   /*  function miscText() {
         return <>
             <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cd
                 hobbies/interests</p>
@@ -34,7 +34,7 @@ export default function About({innerRef}) {
                 ))}
             </ul>
         </>;
-    }
+    } */
 
     return (
         <Box ref={innerRef} display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'3rem'} id={'about'}>
