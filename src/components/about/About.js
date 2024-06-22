@@ -4,7 +4,7 @@ import Terminal from "./Terminal";
 import {Box} from "@mui/material";
 import {info} from "../../info/Info";
 import Skills from "./Skills";
-
+import Experience from "./Experience";
 
 export default function About({innerRef}) {
     const firstName = info.firstName.toLowerCase()
@@ -41,7 +41,8 @@ export default function About({innerRef}) {
             <Terminal text={aboutMeText()}/>
             <h1>Skills</h1>
             <Skills/>
-
+            <h1>Experience</h1>
+            <Experience/>
         </Box>
     )
 }

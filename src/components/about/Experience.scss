@@ -1,0 +1,76 @@
+@import "../../variables.modules";
+
+#Experience {
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 10px;
+  
+  width: 85%;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column; /* Stack items in a column */
+  align-items: center; /* Center items horizontally */
+  gap: 20px;
+  font-size: large;
+  .category {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .experience-sub-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .experience-list {
+    display: flex;
+    flex-direction: column; /* Stack items in a column */
+    gap: 10px;
+  }
+  
+  article {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure articles take full width */
+  }
+  
+  article div {
+    margin-left: 10px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .experience-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .category {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .category {
+      width: 60%;
+    }
+  }
+  
+}
+
