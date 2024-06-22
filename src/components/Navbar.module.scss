@@ -1,51 +1,61 @@
 @import "../variables.modules";
 
+/* General styles */
 nav {
   transition: all 400ms;
   z-index: 1;
   border: none;
   outline: none;
-  color: $dark;
+  color: $dark; /* Assuming $dark is defined in your variables */
+  box-shadow: 13px 13px 100px #969696, -13px -13px 100px #ffffff;
   transition: 300ms ease-in-out;
-  
-  color: black;
-  box-shadow: 13px 13px 100px #969696,
-             -13px -13px 100px #ffffff;
-  transition: 300ms ease-in-out;
-  
-    li {
-      font-weight: 800;
-      text-transform: capitalize;
-      &:hover {
-        transform: translateY(-3px);
-        transition: $transition;
-        
-      }
-    }
-  
+  background-color: $white; /* Default background color, assuming $white is defined */
 
+  /* Responsive adjustments */
+  padding: 10px; /* Adjust padding as needed */
 }
 
-.dark {
+nav.dark {
   background-color: $dark;
-  
 }
 
-
-.light {
+nav.light {
   background-color: $white;
 }
 
-.active {
-  transition: $transition;
+nav .active {
   border: none;
   outline: none;
-  border-radius: 15px; 
-  padding:0px 7px 0px 7px;
+  border-radius: 15px;
+  padding: 7px; /* Adjust padding as needed */
   background-color: #ccc;
-  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.link:hover {
+nav .link:hover {
   color: unset;
+}
+
+/* List item styles */
+nav li {
+  font-weight: 800;
+  text-transform: capitalize;
+  transition: $transition; /* Assuming $transition is defined */
+}
+
+nav li:hover {
+  transform: translateY(-3px);
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 5px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
 }
