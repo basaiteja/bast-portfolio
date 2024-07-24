@@ -1,7 +1,8 @@
 import self from "../img/self.jpg"
-import mock1 from "../img/mock1.png"
-import mock2 from "../img/mock2.png"
-import mock3 from "../img/mock3.png"
+import project1 from "../img/project1.png"
+import project2 from "../img/project2.png"
+
+
 
 
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
@@ -112,22 +113,27 @@ export const info = {
     portfolio: [ // This is where your portfolio projects will be detailed
         {
             title: "Project 1",
-            live: "https://basaiteja.netlify.app/about", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-            source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
-            image: mock1
+            live: "https://bast-cinetalk.netlify.app/", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            source: "https://github.com/basaiteja/CineTalk.git", // this should be a link to the **repository** of the project, where the code is hosted.
+            image: project1
         },
         {
             title: "Project 2",
-            live: "https://basaiteja.netlify.app/about",
-            source: "https://github.com/paytonjewell",
-            image: mock2
+            live: "https://bast-travel-agency.netlify.app/",
+            source: "https://github.com/basaiteja/travel-agency-website.git",
+            image: project2
         },
         {
             title: "Project 3",
             live: "https://basaiteja.netlify.app/about",
-            source: "https://github.com/paytonjewell",
-            image: mock3
+            source: "https://github.com/basaiteja",
+            image: project2
         },
-       
+        {
+            title: "Project 3",
+            live: "https://basaiteja.netlify.app/about",
+            source: "https://github.com/basaiteja",
+            image: project2
+        },
     ]
 }
