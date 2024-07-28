@@ -5,23 +5,30 @@ import './Skills.scss';
 
 const Skills = () => {
   const frontendSkills = [
-    { name: 'HTML', level: 'Experienced' },
-    { name: 'CSS', level: 'Experienced' },
-    { name: 'SASS', level: 'Intermediate' },
-    { name: 'JavaScript', level: 'Basic' },
-    { name: 'TypeScript', level: 'Basic' },
-    { name: 'Material UI', level: 'Intermediate' },
+    { name: 'HTML',  },
+    { name: 'CSS', },
+    { name: 'SASS',  },
+    { name: 'JavaScript',  },
+    { name: 'jsx',  },
+    { name: 'Reacthooks',  },
+    { name: 'Redux',  },
+    
+    
   ];
 
   const backendSkills = [
-    { name: 'PostgreSQL', level: 'Basic' },
-    { name: 'Node JS', level: 'Intermediate' },
-    { name: 'Express JS', level: 'Intermediate' },
-    { name: 'Git', level: 'Intermediate' },
+    { name: 'PostgreSQL' },
+    { name: 'Node JS'  },
+    { name: 'Next JS'  },
+    
   ];
 
   const otherSkills = [
-    { name: 'Git', level: 'Intermediate' },
+    { name: 'Git'},
+    { name: 'AppDynamics'},
+    { name: 'Tailwind'},
+    { name: 'Photoshop'},
+    { name: 'Testing: Jest, React Testing Library'},
   ];
 
   const categories = [
