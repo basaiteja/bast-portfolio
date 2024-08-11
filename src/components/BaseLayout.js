@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import Style from './BaseLayout.module.scss';
 import Navbar from "./Navbar";
 import { useLocation } from "react-router-dom";
@@ -18,8 +18,9 @@ export default function BaseLayout() {
   return (
     <Box className={Style.light}>
       <Grid container display={'flex'} minHeight={'100vh'}>
-        <Grid item className="hidden md:block">
-          {/* <Navbar active={active} setActive={setActive} /> */}
+        <Grid item className="hidden block">
+
+        { singlePage ?  ""  :<Navbar active={active} setActive={setActive} />}
         </Grid>
         <Grid item flexGrow={1}>
           {singlePage ? <SinglePageRoutes refs={{ refHome, refAbout, refPortfolio }} /> : <MultiPageRoutes />}
