@@ -6,34 +6,36 @@ import './Skills.scss';
 const Skills = () => {
   const frontendSkills = [
     { name: 'HTML',  },
-    { name: 'CSS', },
-    { name: 'SASS',  },
+    { name: 'CSS,SASS', },
     { name: 'JavaScript',  },
-    { name: 'jsx',  },
     { name: 'Reacthooks',  },
-    { name: 'Redux',  },
+    { name: 'Redux',  },    
+    { name: 'Tailwind'},
+
     
     
   ];
 
- /*  const backendSkills = [
-    { name: 'PostgreSQL' },
+  const backendSkills = [
+    { name: 'Firebase' },
     { name: 'Node JS'  },
-    { name: 'Next JS'  },
+    { name: 'express JS'  },
+    { name: 'MongoDB'  },
     
   ];
- */
+
   const otherSkills = [
+    
+   
+    { name: 'Testing: Jest, React Testing Library'},
     { name: 'Git'},
     { name: 'AppDynamics'},
-    { name: 'Tailwind'},
     { name: 'Photoshop'},
-    { name: 'Testing: Jest, React Testing Library'},
   ];
 
   const categories = [
     { title: 'Frontend Development', skills: frontendSkills },
-  /*   { title: 'Backend Development', skills: backendSkills }, */
+    { title: 'Backend Development', skills: backendSkills },
     { title: 'Others', skills: otherSkills },
   ];
 
