@@ -16,13 +16,13 @@ const Skills = () => {
     
   ];
 
-  const backendSkills = [
+ /*  const backendSkills = [
     { name: 'PostgreSQL' },
     { name: 'Node JS'  },
     { name: 'Next JS'  },
     
   ];
-
+ */
   const otherSkills = [
     { name: 'Git'},
     { name: 'AppDynamics'},
@@ -33,7 +33,7 @@ const Skills = () => {
 
   const categories = [
     { title: 'Frontend Development', skills: frontendSkills },
-    { title: 'Backend Development', skills: backendSkills },
+  /*   { title: 'Backend Development', skills: backendSkills }, */
     { title: 'Others', skills: otherSkills },
   ];
 
