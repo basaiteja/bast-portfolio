@@ -18,7 +18,7 @@ the site.
 /* 
 This variable will change the layout of the website from multipage to single, scrollable page
 */
-export let singlePage = false;
+export let singlePage = true;
 
 /*
 So let's get started! Some of the info below is pretty self-explanatory, like 'firstName' and 'bio'. I'll try to explain anything
@@ -29,9 +29,9 @@ of what each of the values mean.
 export const info = {
     firstName: " Ajith Saiteja",
     lastName: "Baddi",
-    initials: "BAST", // the example uses first and last, but feel free to use three or more if you like.
-    position: "a Full Stack Developer",
-    selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
+    initials: "BAST", 
+    position: "a front-end Developer",
+    selfPortrait: self, 
     gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
     baseColor: colors[0],
     miniBio: [ // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like

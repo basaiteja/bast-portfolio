@@ -1,87 +1,133 @@
-@import "../../variables.modules";
+  @import "../../variables.modules";
 
-h1 {
-  font-size: 2rem;
-  text-align: center;
-  @media only screen and (min-width: 940px) {
-    font-size: 3rem;
-    text-align: left;
-  }
-}
-
-.Pp{
-  border-radius: 30px;
-  padding: 10px;
-  height: 100%;
-  background: #e0e0e0;
-  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
-  background-size: cover;
-}
-
-h2 {
-  font-size: 1.25rem;
-  text-align: center;
-  @media only screen and (min-width: 940px) {
+  h1 {
     font-size: 2rem;
-    text-align: left;
+    text-align: center;
+    @media only screen and (min-width: 940px) {
+      font-size: 3rem;
+      text-align: left;
+    }
   }
-}
 
-.hand {
-  animation-name: wave;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
-  display: inline-block;
-}
-
-a {
-  color: $dark;
-  transition: color 200ms ease;
-}
-
-a:hover {
-  color: $lightgray;
-  transition: color 200ms ease;
-}
-
-@keyframes wave {
-  0% { transform: rotate( 0.0deg) }
-  10% { transform: rotate(14.0deg) }
-  20% { transform: rotate(-8.0deg) }
-  30% { transform: rotate(14.0deg) }
-  40% { transform: rotate(-4.0deg) }
-  50% { transform: rotate(10.0deg) }
-  60% { transform: rotate( 0.0deg) }
-  100% { transform: rotate( 0.0deg) }
-}
-
-.card {
-  
-  border-radius: 30px;
-  padding: 10px;
-  background: #e0e0e0;
-  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
-  .icard{
+  .Pp {
     border-radius: 30px;
-    background: lightgrey;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+    padding: 10px;
+    height: auto; /* Allow the height to adjust automatically based on the width */
+    max-width: 50%; /* Ensure the image doesn't exceed the container's width */
+    background: rgba(255, 255, 255, 0.304); /* Transparent background for glass effect */
+    // box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.2), -15px -15px 30px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border to enhance glass effect */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    background-size: cover;
+
+    @media only screen and (max-width: 600px) {
+      border-radius: 15px; /* Adjust border-radius for smaller screens */
+    }
   }
-}
-.scard {
-  margin-top: 15px;
-  border-radius: 30px;
-  padding: 10px;
-  background: #e0e0e0;
-  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
-  .soccard{
-    border-radius: 10px;
-    width: 50px;
 
-    background: lightgrey;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+  h2 {
+    font-size: 1.25rem;
+    text-align: center;
+    @media only screen and (min-width: 940px) {
+      font-size: 2rem;
+      text-align: left;
+    }
   }
-}
+
+  .hand {
+    animation-name: wave;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+
+  a {
+    color: $dark;
+    transition: color 200ms ease;
+  }
+
+  a:hover {
+    color: $lightgray;
+    transition: color 200ms ease;
+  }
+
+  @keyframes wave {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) }
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }
+    100% { transform: rotate( 0.0deg) }
+  }
+
+  .card {
+    border-radius: 30px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.363);
+    // box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.2), -15px -15px 30px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 
 
+    .icard {
+      border-radius: 30px;
+      background: rgba(91, 91, 91, 0.323);
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 50px -12px inset, rgba(255, 255, 255, 0.3) 0px 18px 26px -18px inset;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  }
 
+  .scard {
+    margin-top: 15px;
+    border-radius: 30px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.203);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column; // Default to vertical alignment
+    align-items: center; // Center align items horizontally
+    gap: 1.5rem; // Adjust gap between items if needed
+    margin-left: 10px;
+  
+    @media only screen and (max-width: 900px) {
+      flex-direction: row; // Change to horizontal alignment on smaller screens
+      flex-wrap: wrap; // Wrap items if necessary
+      justify-content: center; // Center align items horizontally
+    }
+  }
+  
+  .soccard {
+    width: 60px; // Adjusted width
+    height: 60px; // Adjusted height
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1); // Optional: add background color for better visibility
+  
+    i {
+      color: black; // Icon color
+      font-size: 28px; // Adjusted icon size
+    }
+  
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.344);
+       // Icon background color on hover
+  
+      i {
+        color: white; 
+        scale: 1.4;// Icon color on hover
+      }
+    }
+  }
+  

@@ -5,7 +5,7 @@ import React from 'react';
 import { Box } from "@mui/material";
 
 export default function SinglePageRoutes({refs}) {
-    return (<Box mt={'3rem'}>
+    return (<Box  m={'8rem'}>
         <Home innerRef={refs.refHome}/>
         <About innerRef={refs.refAbout}/>
         <Portfolio innerRef={refs.refPortfolio}/>

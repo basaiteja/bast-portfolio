@@ -5,7 +5,7 @@ import './Experience.scss';
 
 const Experience = () => {
   const experiences = [
-    { company: 'supth info tech solutions', role: 'React Developer', period: '2023 - Present' },
+    { company: 'Snovaspace information Systems Pvt ltd.', role: 'React Developer', period: '2023 - Present' },
     { company: 'Infosys Limited', role: 'System Associate', period: '2022 - 2023' },
   ];
 
@@ -13,7 +13,7 @@ const Experience = () => {
     <article>
       <div>
         <h3>{experience.company}</h3>
-        <p>{experience.role}</p>
+        <p style={{ color: 'black' }}>{experience.role}</p>
         <span>{experience.period}</span>
       </div>
     </article>

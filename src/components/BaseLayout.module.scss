@@ -1,31 +1,43 @@
 @import "../variables.modules";
 
+// Enhanced bubble morphing gradient animation
+@keyframes morphingBubbles {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
 footer {
   color: $dark;
 }
 
-.dark {
-  background-color: $dark;
-  color: $white;
-  transition: all 400ms;
 
-  a, i, li {
-    color: $white;
-    transition: color 400ms;
-  }
-
-  a:visited {
-    color: $white;
-  }
-
-  footer {
-    color: $white;
-  }
-}
 
 .light {
-  background-color: $white;
-  color: $dark;
-  transition: all 400ms;
+  min-width: 100vw; 
+  min-height: 100vh;
+  position: relative; /* Ensures the z-index applies */
+  z-index: 1; 
+  background: radial-gradient(circle at 10% 10%, #ff6f61, transparent 15%),
+              radial-gradient(circle at 20% 30%, #6a1b9a, transparent 15%),
+              radial-gradient(circle at 30% 50%, #00bcd4, transparent 15%),
+              radial-gradient(circle at 40% 70%, #cddc39, transparent 15%),
+              radial-gradient(circle at 50% 10%, #ffeb3b, transparent 15%),
+              radial-gradient(circle at 60% 30%, #ff5722, transparent 15%),
+              radial-gradient(circle at 70% 50%, #9c27b0, transparent 15%),
+              radial-gradient(circle at 80% 70%, #3f51b5, transparent 15%),
+              radial-gradient(circle at 90% 90%, #4caf50, transparent 15%);
+  background-size: 200% 200%;
+  animation: morphingBubbles 30s infinite ease-in-out;
+  @media screen and (max-width: 385px) {
+    .light {
+      width: 200vw; /* Ensure the background covers the entire area on small devices */
+    }
+  }
 }
-

@@ -8,13 +8,31 @@ nav {
   outline: none;
   color: $dark; /* Assuming $dark is defined in your variables */
   box-shadow: 13px 13px 100px #969696, -13px -13px 100px #ffffff;
-  transition: 300ms ease-in-out;
   background-color: $white; /* Default background color, assuming $white is defined */
+  padding: 10px;
+  height: 100vh; /* Full height for sidebar */
+  width: 20vw; /* Adjusted width for the sidebar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* Fix sidebar to the left of the viewport */
+  left: 0;
+  top: 0;
 
   /* Responsive adjustments */
-  padding: 10px; /* Adjust padding as needed */
+  @media screen and (max-width: 768px) {
+    width: 40vw;
+    padding: 5px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 60vw;
+    font-size: 14px;
+  }
 }
 
+/* Dark mode styles */
 nav.dark {
   background-color: $dark;
 }
@@ -23,15 +41,17 @@ nav.light {
   background-color: $white;
 }
 
+/* Active link styles */
 nav .active {
   border: none;
   outline: none;
   border-radius: 15px;
-  padding: 7px; /* Adjust padding as needed */
+  padding: 7px;
   background-color: #ccc;
   box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Hover effect for links */
 nav .link:hover {
   color: unset;
 }
@@ -41,21 +61,9 @@ nav li {
   font-weight: 800;
   text-transform: capitalize;
   transition: $transition; /* Assuming $transition is defined */
+  margin: 1rem 0; /* Spacing between items */
 }
 
 nav li:hover {
   transform: translateY(-3px);
-}
-
-/* Media queries for responsiveness */
-@media screen and (max-width: 768px) {
-  nav {
-    padding: 5px; /* Adjust padding for smaller screens */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  nav {
-    font-size: 14px; /* Adjust font size for smaller screens */
-  }
 }

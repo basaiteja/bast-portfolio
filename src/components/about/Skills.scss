@@ -1,4 +1,3 @@
-
 @import "../../variables.modules";
 
 #Skills {
@@ -15,18 +14,20 @@
 .category {
   width: 100%;
   max-width: 400px;
-  
   border-radius: 20px;
-  
 
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent white background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Blur effect for Safari */
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 
+              0 0 10px rgba(255, 255, 255, 0.2) inset; /* Soft outer and inner shadow */
 }
 
 .skills-sub-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  color: black; /* Black color for text */
 }
 
 .skills-list {
@@ -39,12 +40,16 @@ article {
   align-items: center;
   padding: 10px;
   border-radius: 10px;
-  background-color: #e0e0e0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent background */
+  backdrop-filter: blur(5px); /* Slight blur for articles */
+  -webkit-backdrop-filter: blur(5px); /* Blur effect for Safari */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+              0 0 10px rgba(255, 255, 255, 0.15) inset; /* Softer shadow */
 }
 
 article div {
   margin-left: 10px;
+  color: black; /* Black color for text */
 }
 
 @media screen and (min-width: 768px) {
